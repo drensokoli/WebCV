@@ -5,6 +5,27 @@ html {
     scroll-behavior: smooth;
   }
 
+  .alert {
+	box-sizing: border-box;
+	background-color: #72dfae;
+	width: 100%;
+	position: relative; 
+	top: 0;
+	left: 0;
+	z-index: 300;
+	padding: 20px 40px;
+	color: #333;
+    margin-bottom: 0;
+}
+
+.close{
+    position: relative;
+    bottom: 50px;
+    float: right;
+
+}
+
+
 .first-col{
     color: #eaeced;
     background-color: #1d2d3c;
@@ -75,12 +96,13 @@ p{
 
 
 
-/* ____________SECOND COLUMN___________ */
+/* __________________________________SECOND COLUMN____________________________________________ */
 .second-col{
     background-color: #eaeced;
     float: right;
     width: 70%  ;
     height: 2400px;
+    margin-top: -3px;
 }
 
 .pdf{
@@ -149,6 +171,7 @@ p{
 
 
 .carousel-inner{
+    margin-top: 50px;
     margin-bottom: 50px;
 
 }

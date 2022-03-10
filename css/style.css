@@ -31,7 +31,7 @@ html {
     background-color: #1d2d3c;
     float: left;
     width: 30%;
-    height: 2600px;  
+    height: 2500px;  
 }
 
 .foto{
@@ -97,7 +97,7 @@ p{
     background-color: #eaeced;
     float: right;
     width: 70%  ;
-    height: 2600px;
+    height: 2500px;
     margin-top: -3px;
 }
 
@@ -205,8 +205,8 @@ p{
     transform: translateY(-0.50em);
     box-shadow: 0 0.5em 0.5em -0.4em;
     transition: 400ms;
-    background-color: #68a3bb;
-    border: solid #68a3bb;
+    background-color: black;
+    color: white;
 }
 
 h5{

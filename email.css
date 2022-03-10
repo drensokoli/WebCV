@@ -23,7 +23,8 @@ body{
 }
 
 form{
-    max-width: 500px;
+    max-width: 550px;
+    max-height: 570px;
     width: 90%;
     background: white ;
     margin: 17vh auto 0 auto;

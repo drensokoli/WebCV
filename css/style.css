@@ -266,11 +266,12 @@ h5{
 
 @media(max-width: 500px){
     .work{
-        text-align: center;
+        text-align: left;
         margin-left: auto;
+
     }
     .education{
-        text-align: center;
+        text-align: left;
         margin-left: auto;
 
     }
@@ -279,6 +280,24 @@ h5{
         margin-left: auto;   
         align-items: center;
     }
+
+    .work h3{
+        font-size: 25px;
+    }
+
+    .work h4{
+        font-size: 15px;
+    }
+    .education h3{
+        margin-right: 80px;
+        font-size: 25px;
+    }
+
+    .education h4{
+        font-size: 15px;
+    }
+
+
     .title{
         text-align: left;
     }
@@ -291,6 +310,6 @@ h5{
     }
     .virtues{
         padding: 0.5%;
-        margin-left: 5px;
+        margin-left: 1px;
     }
 }

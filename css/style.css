@@ -136,10 +136,12 @@ p{
 .title{
     color: #eaeced;
     border: solid #1e2e3d;
+    border-radius: 7px;
     padding: 20px;
     width: fit-content;
     background-color: #1d2d3c;
     margin-bottom: 20px;
+
 }
 
 .title:hover{

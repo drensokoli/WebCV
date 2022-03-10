@@ -16,13 +16,12 @@ html {
 	padding: 20px 40px;
 	color: #333;
     margin-bottom: 0;
-
 }
 
 .close{
-    position: relative;
-    bottom: 50px;
-    float: right;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 
 }
 

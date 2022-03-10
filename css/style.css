@@ -196,6 +196,7 @@ p{
 
 .virtue{
     border: solid #1d2d3c;
+    border-radius: 5px;
     text-align: center;
     padding: 1%;
     margin: 10px;
@@ -205,7 +206,7 @@ p{
     transform: translateY(-0.50em);
     box-shadow: 0 0.5em 0.5em -0.4em;
     transition: 400ms;
-    background-color: black;
+    background-color: rgb(40, 51, 75);
     color: white;
 }
 

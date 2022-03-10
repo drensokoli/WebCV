@@ -263,3 +263,34 @@ h5{
     }
 
 }
+
+@media(max-width: 500px){
+    .work{
+        text-align: center;
+        margin-left: auto;
+    }
+    .education{
+        text-align: center;
+        margin-left: auto;
+
+    }
+    .skills{
+        text-align: center;
+        margin-left: auto;   
+        align-items: center;
+    }
+    .title{
+        text-align: left;
+    }
+    .title2{
+        width: 90%;
+    }
+    .carousel-inner img{
+        max-width: 90%;
+        margin-left: 30px;
+    }
+    .virtues{
+        padding: 0.5%;
+        margin-left: 5px;
+    }
+}

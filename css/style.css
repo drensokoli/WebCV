@@ -16,6 +16,7 @@ html {
 	padding: 20px 40px;
 	color: #333;
     margin-bottom: 0;
+
 }
 
 .close{
@@ -92,10 +93,6 @@ p{
 
 
 
-
-
-
-
 /* __________________________________SECOND COLUMN____________________________________________ */
 .second-col{
     background-color: #eaeced;
@@ -165,10 +162,9 @@ p{
     margin-left: 75px;
 }
 
-.row{
-    margin-left: 10%;
+#carouselExampleCaptions{
+    padding-right: 10%;
 }
-
 
 .carousel-inner{
     margin-top: 50px;
@@ -192,29 +188,79 @@ p{
     font-size: 30px;
 }
 
-.row{
-    width: fit-content;
-
-    margin-left: 15%;
-}
-
 .virtues{
-    border: solid #1d2d3c;
-    padding: 2%;
-    margin: 2%;
-    text-align: center;
+    width: 95%;
+    padding-left: 20%;
 }
 
-.virtues:hover{
+.virtue{
+    border: solid #1d2d3c;
+    text-align: center;
+    padding: 1%;
+    margin: 10px;
+}
+
+.virtue:hover{
     transform: translateY(-0.50em);
     box-shadow: 0 0.5em 0.5em -0.4em;
     transition: 400ms;
-    background-color: #538295;
-    border: solid #538295;
+    background-color: #68a3bb;
+    border: solid #68a3bb;
 }
 
 h5{
     font-size: 15px;
     font-weight: bold;
     color: #1d2d3c;
+}
+
+/* ______________________________________________MEDIA QUERY______________________________________________ */
+
+@media (max-width:1080px){
+    
+    .first-col{
+        height: fit-content;
+        float: none;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    
+    .second-col{
+        height: fit-content;
+        float: none;
+        width: 100%;
+        align-items: center;
+    }
+
+
+    #btn{
+        margin-bottom: 20px;
+    }
+    .work{
+        padding-top: 50px;
+        margin-top: 0px;
+    }
+    #carouselExampleCaptions{
+        padding-right: 1%;
+    }
+}
+
+@media (min-width:720px) and (max-width:1080px){
+    #carouselExampleCaptions{
+        margin-right: 10%;
+    }
+
+}
+
+@media (max-width: 990px) {
+    .virtues{
+        padding-left: 30%;
+    }
+}
+
+@media (max-width: 770px) {
+    .virtues{
+        padding-right: 35%;
+    }
+
 }

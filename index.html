@@ -27,12 +27,12 @@
     <title>Web CV</title>
 
 </head>
-<body>r>
+<body>
 
     <div class="alert">
       <h2>Hey! Read Me...</h2>
       <p>This is a responsive website with a CV layout and is best viewed on desktop (1920 x 1080 resolution)</p>
-      <button type="button" class="btn-close close" aria-label="Close"></button>
+      <button type="button" class="btn-close close" aria-label="Close" id="button"></button>
 
     </div>
 
@@ -60,12 +60,19 @@
             </ul>
             </div>
             
-            <div class="d-grid gap-2">
+            <div id="btns" class="d-grid gap-2">
                 <button id="btn" type="button" class="btn btn-outline-primary btn-lg" onclick="location.href='https://www.linkedin.com/in/dren-sokoli-0003a81a1/';"><i class="fa-brands fa-linkedin"></i> LinkedIn</button>
                 <button id="btn" type="button" class="btn btn-outline-light btn-lg" onclick="location.href='https://github.com/drensokoli';"><i class="fa-brands fa-github"></i> GitHub</button>
                 <button id="btn" type="button" class="btn btn-outline-success btn-lg" onclick="location.href='https://www.spottedbylocals.com/prishtina/author/drensokoli/';"><i class="fa-solid fa-eye"></i> Sppoted by Locals</button>
-                <button id="btn" type="button" class="btn btn-outline-warning btn-lg" onclick="location.href='#';"><i class="fa-solid fa-envelope"></i> Email</button>
+                <button id="btn" type="button" class="btn btn-outline-warning btn-lg" onclick="location.href='email.html';"><i class="fa-solid fa-envelope"></i> Email</button>
             </div> 
+            <a  href="css/Cover Letter.pdf" download class="pdf">
+              <div id="btn" class="d-grid gap-2">
+                  
+                  <button class="btn btn-outline-danger btn-lg" type="button"><i class="fa-solid fa-download"></i> Download Cover Letter</button>
+                  
+                </div>
+              </a>
         </div>
         
 
@@ -74,13 +81,7 @@
     </section>
 
     <section class="second-col">
-        <a href="css/Cover Letter.pdf" download class="pdf">
-        <div class="download d-grid gap-2">
-            
-            <button class="btn btn-outline-danger btn-lg" type="button"><i class="fa-solid fa-download"></i> Download Cover Letter</button>
-            
-          </div>
-        </a>
+        
         
 
         <div class="work">
@@ -218,38 +219,38 @@
                 </button>
               </div>
 
-            <div class="row">
-                <div class="virtues col-md-3 col-sm-12">
-                    <h5>Leadership</h5>
-                </div>
-                <div class="virtues col-md-3 col-sm-12">
-                    <h5>Attention to Detail</h5>
-                </div>
-                <div class="virtues col-md-3 col-sm-12">
-                    <h5>Creativity</h5>
-                </div>
-                <div class="virtues col-md-3 col-sm-12">
-                    <h5>Active listening
-                    </h5>
-                </div>
-                <div class="virtues col-md-3 col-sm-12">
-                    <h5>Problem-solving</h5>
-                </div>
-                <div class="virtues col-md-3 col-sm-12">
-                    <h5>Critical thinking skills</h5>
-                </div>
-            </div>
 
+                <div class="row virtues"> 
+                  <div class="virtue col-lg-4 col-md-6">
+                    <h6>Leadership</h6>
+                  </div>
+                  <div class="virtue col-lg-4 col-md-6">
+                    <h6>Attention to Detail</h6>
+                  </div>
+                  <div class="virtue col-lg-4 col-md-6">
+                    <h6>Creativity</h6>
+                  </div>
+                <!-- </div>
+
+                <div class="row virtues2">  -->
+                  <div class="virtue col-lg-4 col-md-6">
+                    <h6>Active listening</h6>
+                  </div>
+                  <div class="virtue col-lg-4 col-md-6">
+                    <h6>Problem-solving</h6>
+                  </div>
+                  <div class="virtue col-lg-4 col-md-6">
+                    <h6>Critical thinking</h6>
+                  </div>
+                </div>
         </div>
-
-
-        <!-- <h1>Languages</h1>
-        Albanian - Native
-        <br>
-        English - Fluent B2
-        <br>
-        French - Beginners -->
     </section>
+
+    <script>
+      document.getElementById("button").addEventListener("click", function(){
+        document.querySelector(".alert").style.display  = "none";
+      })
+    </script>
     
 </body>
 </html>

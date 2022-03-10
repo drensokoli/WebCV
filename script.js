@@ -21,6 +21,15 @@ function validateForm(){
         nameInput.classList.add("error-border");
     }
 
+    if(surname.value.length < 1){
+        errorNodes[1].innerText = "Last name cannot be blank";
+        surname.classList.add("error-border");
+    }
+
+    if(!emailIsValid(email.value)){
+        errorNodes[2].innerText = "Invalid email address";
+        email.classList.add("error-border");
+    }
 }
 
 function clearMessages(){
@@ -28,4 +37,8 @@ function clearMessages(){
         errorNodes[i].innerText = "";
     }
     nameInput.classList.remove("error-border");
+}
+
+function emailIsValid(email){
+    let pattern
 }

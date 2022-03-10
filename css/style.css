@@ -217,6 +217,12 @@ h5{
 
 /* ______________________________________________MEDIA QUERY______________________________________________ */
 
+@media(min-width:1080px){
+    .carousel-indicators{
+        margin-right: 25%;
+    }
+}
+
 @media (max-width:1080px){
     
     .first-col{
@@ -302,6 +308,7 @@ h5{
 
     .title{
         text-align: left;
+
     }
     .title2{
         width: 90%;

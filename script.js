@@ -2,6 +2,9 @@ document.getElementById("button").addEventListener("click", function(){
     document.querySelector(".alert").style.display  = "none";
   })
 
+
+
+
 // Get data
 const nameInput = document.querySelector("#name");
 const surname = document.querySelector("#surname");
@@ -42,3 +45,5 @@ function clearMessages(){
 function emailIsValid(email){
     let pattern
 }
+
+

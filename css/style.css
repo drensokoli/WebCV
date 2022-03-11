@@ -1,11 +1,13 @@
 *{
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
 }
 html {
     scroll-behavior: smooth;
   }
 
-  .alert {
+.alert {
 	box-sizing: border-box;
 	background-color: #72dfae;
 	width: 100%;
@@ -25,29 +27,31 @@ html {
 
 }
 
+.me{
+    display: flex;
+    justify-content: center;
+}
+
 
 .first-col{
     color: #eaeced;
     background-color: #1d2d3c;
     float: left;
     width: 30%;
-    height: 2500px;  
+    height: 2600px;  
 }
 
 .foto{
     width: 50%;
-    margin-left: 25%;
     margin-bottom: 40px;
     padding-top: 100px;
 }
 
 .name{
-    text-align: center;
     font-size: 50px;
 }
 
 .prof{
-    text-align: center;
     margin-bottom: 70px;
 }
 
@@ -57,6 +61,7 @@ html {
 
 .col1-text h3{
     font-weight: bold;
+    padding-bottom: 10px;
 }
 
 p{
@@ -76,19 +81,116 @@ p{
 .contact ul{
     font-size: 20px;
     list-style: none;
-    padding-left: 0px;
+    background-color: transparent;
+    padding: 0;
 }
 
-.link_buttons{
-    align-items: center;
-    margin-left: 23%;
-    margin-bottom: 50px;
+
+.buttons{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+}
+
+.btn{
+    color: white;
+    background-color: transparent;
+    min-width: 300px;
+    max-width: 300px;
+    border-radius: 3px;
+    padding: 15px 30px 15px 30px;
+    font-size: 20px;
+}
+
+.btn:hover{
+    transform: translateY(-0.50em);
+    transition: 500ms;
+}
+
+.linkedin{
+    color: #0d6efd;
+    border: solid 1px #0d6efd;
+}
+
+.linkedin:hover{
+    color: white;
+    background-color: #0d6efd;
+}
+
+.github{
+    font-weight: 400;
+    color: white;
+    border: solid 1px white;
+}
+
+.github:hover{
+    color: black;
+    background-color: white;
+}
+
+
+.spotted{
+    color: #198754;
+    border: solid 1px #198754;
+}
+
+.spotted:hover{
+    color: white;
+    background-color: #198754;
+}
+
+
+
+.email{
+    color: #ffc107;
+    border: solid 1px #ffc107;
+}
+
+.email:hover{
+    color: black;
+    background-color: #ffc107;
+}
+
+
+.download{
+    color: #ff3548;
+    border: solid 1px #ff3548;
+}
+
+.download:hover{
+    color: white;
+    background-color: #ff3548;
+}
+
+/* 
+#btns{
+    display: flex;
+    justify-content: block;
+}
+
+
+#butn{
+    display: flex;
+    justify-content: center;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 10px 30px 10px 30px;
 }
 
 #btn{
-    margin-left: 19%;
+    display: flex;
+    justify-content: center;
+
     margin-bottom: 10px;
-}
+} */
 
 
 
@@ -97,7 +199,7 @@ p{
     background-color: #eaeced;
     float: right;
     width: 70%  ;
-    height: 2500px;
+    height: 2600px;
     margin-top: -3px;
 }
 
@@ -105,11 +207,6 @@ p{
     text-decoration: none;
 }
 
-.download{
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 50px;
-}
 
 .second-col h3{
     font-size: 35px;
@@ -141,7 +238,6 @@ p{
     width: fit-content;
     background-color: #1d2d3c;
     margin-bottom: 20px;
-
 }
 
 .title:hover{
@@ -159,13 +255,21 @@ p{
     margin-bottom: 75px;
 }
 
+
+.carouselExampleCaptions{
+    display: flex;
+    justify-content: center;
+} 
+
+
+
 .skills{
     margin-left: 75px;
 }
-
+/* 
 #carouselExampleCaptions{
     padding-right: 10%;
-}
+} */
 
 .carousel-inner{
     margin-top: 50px;
@@ -190,16 +294,17 @@ p{
 }
 
 .virtues{
-    width: 95%;
-    padding-left: 20%;
+    display: flex;
+    justify-content: center;
 }
 
 .virtue{
     border: solid #1d2d3c;
     border-radius: 5px;
     text-align: center;
-    padding: 1%;
-    margin: 10px;
+    padding: 20px 60px 20px 60px;
+    margin: 10px; 
+    min-width: 300px;
 }
 
 .virtue:hover{
@@ -216,13 +321,9 @@ h5{
     color: #1d2d3c;
 }
 
-/* ______________________________________________MEDIA QUERY______________________________________________ */
 
-@media(min-width:1080px){
-    .carousel-indicators{
-        margin-right: 25%;
-    }
-}
+
+/* ______________________________________________MEDIA QUERY______________________________________________ */
 
 @media (max-width:1080px){
     
@@ -239,41 +340,18 @@ h5{
         width: 100%;
         align-items: center;
     }
-
-
+/* 
     #btn{
         margin-bottom: 20px;
-    }
+    } */
     .work{
         padding-top: 50px;
         margin-top: 0px;
     }
-    #carouselExampleCaptions{
-        padding-right: 1%;
-    }
-}
-
-@media (min-width:720px) and (max-width:1080px){
-    #carouselExampleCaptions{
-        margin-right: 10%;
-    }
-
-}
-
-@media (max-width: 990px) {
-    .virtues{
-        padding-left: 30%;
-    }
-}
-
-@media (max-width: 770px) {
-    .virtues{
-        padding-right: 35%;
-    }
-
 }
 
 @media(max-width: 500px){
+
     .work{
         text-align: left;
         margin-left: auto;
@@ -306,7 +384,6 @@ h5{
         font-size: 15px;
     }
 
-
     .title{
         text-align: left;
         border-radius: 0px 5px 5px 0px;
@@ -315,12 +392,15 @@ h5{
     .title2{
         width: 90%;
     }
-    .carousel-inner img{
-        max-width: 90%;
-        margin-left: 30px;
-    }
+
+}
+
+@media (max-width:650px) {
     .virtues{
-        padding: 0.5%;
-        margin-left: 1px;
+        display: block;
+    }
+
+    .virtue{
+       padding: 10px 20px 10px 20px;
     }
 }

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-
-
 *{
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
@@ -29,11 +25,17 @@ body{
     align-items: center;
 }
 
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
 .box{
     position: relative;
     width: 500px;
-    min-width: 500px;
-    height: 600px;
+    /* height: 600px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,28 +70,13 @@ body{
     }
 }
 
-
-
-@media (max-width:600px) {
-    .box{
-        width: 80%;
-    }
-}
-
-@media (max-height:720px) {
-    .box{
-        height: 600px;
-    }
-}
-
-
 form{
     display: flex;
     flex-direction: column;
     z-index: 10;
-    padding: 2vw 4vw;
-    height: 80%;
-    width: 85%;
+    padding: 50px 20px 50px;
+    /* height: 500px; */
+    width: 80%;
     max-width: 400px;
     align-items: center;
 }
@@ -170,4 +157,62 @@ textarea::-webkit-input-placeholder {
 
 .btn:focus{
     background-color: rgb(76, 89, 145);
+}
+
+
+
+@media (max-width:550px) {
+    .input_field{
+        width: 250px;
+
+    }
+    .input_message{
+        width: 250px;
+        
+    }
+}
+
+@media (max-width:360px) {
+
+    h1{
+        font-size: 30px;
+    }
+    
+    .input_field{
+        width: 200px;
+    }
+    .input_message{
+        width: 200px;
+    }
+}
+
+@media (max-height:720px) {
+    .box{
+        height: 600px;
+    }
+}
+
+
+
+
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper .input-error {
+    position: absolute;
+    color: red;
+    bottom: 0;
+    display: none;
+
+}
+
+
+.input-wrapper.has-error .input_field {
+    border-color: red;
+}
+
+.input-wrapper.has-error .input-error {
+    display: block;
 }

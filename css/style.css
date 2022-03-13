@@ -38,7 +38,7 @@ html {
     background-color: #1d2d3c;
     float: left;
     width: 30%;
-    height: 2600px;  
+    height: 2700px;  
 }
 
 .foto{
@@ -170,36 +170,13 @@ a:active{
     background-color: #ff3548;
 }
 
-/* 
-#btns{
-    display: flex;
-    justify-content: block;
-}
-
-
-#butn{
-    display: flex;
-    justify-content: center;
-    margin-right: 1%;
-    margin-left: 1%;
-    padding: 10px 30px 10px 30px;
-}
-
-#btn{
-    display: flex;
-    justify-content: center;
-
-    margin-bottom: 10px;
-} */
-
-
 
 /* __________________________________SECOND COLUMN____________________________________________ */
 .second-col{
     background-color: #eaeced;
     float: right;
     width: 70%  ;
-    height: 2600px;
+    height: 2700px;
     margin-top: -3px;
 }
 
@@ -241,13 +218,22 @@ a:active{
 }
 
 .title:hover{
-    padding: 25px;
     transition: 500ms;
+    transform: translateY(-0.50em);
+    cursor: pointer;
+}
 
+.nav-toggle{
+    display: none;
 }
 
 .content{
     margin-left: 30px;
+    display: none;
+}
+
+.nav-toggle:checked ~ .content{
+    display: block;
 }
 
 .education{
@@ -255,6 +241,34 @@ a:active{
     margin-bottom: 75px;
 }
 
+.education_title:hover{
+    transition: 500ms;
+    transform: translateY(-0.50em);
+    cursor: pointer;
+}
+
+.education_title{
+    color: #eaeced;
+    border: solid #1e2e3d;
+    border-radius: 7px;
+    padding: 20px;
+    width: fit-content;
+    background-color: #1d2d3c;
+    margin-bottom: 20px;
+}
+
+.edu-toggle{
+    display: none;
+}
+
+.education_content{
+    margin-left: 30px;
+    display: none;
+}
+
+.edu-toggle:checked ~ .education_content{
+    display: block;
+}
 
 .carouselExampleCaptions{
     display: flex;
@@ -266,10 +280,6 @@ a:active{
 .skills{
     margin-left: 75px;
 }
-/* 
-#carouselExampleCaptions{
-    padding-right: 10%;
-} */
 
 .carousel-inner{
     margin-top: 50px;
@@ -302,9 +312,9 @@ a:active{
     border: solid #1d2d3c;
     border-radius: 5px;
     text-align: center;
-    padding: 20px 60px 20px 60px;
+    padding: 15px 80px 30px 80px;
     margin: 10px; 
-    min-width: 300px;
+    min-width: 400px;
 }
 
 .virtue:hover{
@@ -315,11 +325,22 @@ a:active{
     color: white;
 }
 
-h5{
+.virtue h5{
     font-size: 15px;
-    font-weight: bold;
-    color: #1d2d3c;
+    color: rgb(40, 51, 75);
 }
+
+.subtext{
+    max-width: 200px;
+    color: transparent;
+    display: block;
+    justify-content: center;
+}
+
+.virtue:hover .subtext{
+    color: white;
+}
+
 
 
 
@@ -348,9 +369,13 @@ h5{
         padding-top: 50px;
         margin-top: 0px;
     }
+
+    .virtue h6{
+        margin-left: 17%;
+    }
 }
 
-@media(max-width: 500px){
+@media(max-width: 600px){
 
     .work{
         text-align: left;
@@ -387,20 +412,32 @@ h5{
     .title{
         text-align: left;
         border-radius: 0px 5px 5px 0px;
-
     }
-    .title2{
+    .education_title{
+        text-align: left;
+        border-radius: 0px 5px 5px 0px;
         width: 90%;
     }
 
 }
 
 @media (max-width:650px) {
-    .virtues{
-        display: block;
-    }
-
     .virtue{
        padding: 10px 20px 10px 20px;
+    }
+}
+
+@media (max-width:850px) {
+    .virtue{
+        min-width: 40%;
+    }
+    .virtue h6{
+        margin-left: 0;
+    }
+}
+
+@media (min-width:1080px){
+    .virtue{
+        min-width: 300px;
     }
 }

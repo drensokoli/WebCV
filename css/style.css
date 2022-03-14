@@ -51,7 +51,7 @@ html {
 }
 
 .card{
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 600px;
@@ -62,7 +62,15 @@ html {
     font-weight: 15%;
     z-index: -5;
     position: absolute;
+    transform: translateY(-50em);
 }
+
+.card.transformed-state{
+    transform: translateY(0);
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
 
 .card h1{    
     display: flex;

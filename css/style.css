@@ -8,6 +8,7 @@ html {
   }
   
 .alert {
+    position: fixed;
 	box-sizing: border-box;
 	background-color: #72dfae;
 	width: 100%;
@@ -18,6 +19,48 @@ html {
 	padding: 20px 40px;
 	color: #333;
     margin-bottom: 0;
+
+}
+
+.home {
+    background-image: url("pexels-valdemaras-d-1647962.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: -10;
+}
+
+.greeting{
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 500px;
+    background: transparent;
+    /* filter: blur(2px); */
+    border: solid 2px white;
+    font-weight: 15%;
+}
+
+.card h1{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 60px;
+    color: white;
 }
 
 .close{
@@ -177,7 +220,6 @@ a:active{
     float: right;
     width: 70%  ;
     height: 2700px;
-    margin-top: -3px;
 }
 
 .pdf{

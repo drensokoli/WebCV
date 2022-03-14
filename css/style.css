@@ -9,7 +9,6 @@ html {
 
 .popup{
     width: 100%;
-    position: ;
 }
 
 .alert {
@@ -52,7 +51,7 @@ html {
 }
 
 .card{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 600px;
@@ -63,9 +62,7 @@ html {
     font-weight: 15%;
     z-index: -5;
     position: absolute;
-    display: none;    
 }
-
 
 .card h1{    
     display: flex;
@@ -94,7 +91,7 @@ html {
     background-color: #1d2d3c;
     float: left;
     width: 30%;
-    height: 2700px;  
+    height: 2850px;  
 }
 
 .foto{
@@ -232,7 +229,7 @@ a:active{
     background-color: #eaeced;
     float: right;
     width: 70%  ;
-    height: 2700px;
+    height: 2850px;
 }
 
 .pdf{
@@ -394,10 +391,9 @@ a:active{
 
 .virtue:hover .subtext{
     color: white;
-    transition: 1500ms;
 }
 
-.card
+
 
 
 /* ______________________________________________MEDIA QUERY______________________________________________ */

@@ -63,7 +63,9 @@ html {
     font-weight: 15%;
     z-index: -5;
     position: absolute;
+    display: none;    
 }
+
 
 .card h1{    
     display: flex;
@@ -392,9 +394,10 @@ a:active{
 
 .virtue:hover .subtext{
     color: white;
+    transition: 1500ms;
 }
 
-
+.card
 
 
 /* ______________________________________________MEDIA QUERY______________________________________________ */

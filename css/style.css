@@ -54,6 +54,8 @@ html {
     font-weight: 15%;
 }
 
+
+
 .card h1{    
     display: flex;
     align-items: center;
@@ -61,6 +63,15 @@ html {
     position: absolute;
     font-size: 60px;
     color: white;
+}
+
+@media (max-width:700px) {
+    .card{
+        width: 80%;
+    }
+    .card h1{
+        font-size: 35px;
+    }
 }
 
 .close{

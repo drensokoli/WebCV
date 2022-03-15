@@ -62,7 +62,6 @@ html {
     font-weight: 15%;
     z-index: -5;
     position: absolute;
-    transform: translateY(-50em);
 }
 
 .card.transformed-state{

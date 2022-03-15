@@ -4,15 +4,16 @@ document.getElementById("button").addEventListener("click", function(){
 
   const popup = document.querySelector('.alert');
   const close = document.querySelector('.button');
-  var greeting_card = document.getElementsByClassName("card");
 
-  function welcome(){
-    document.getElementById("card").style.transform = "translateY(0)";
-  }
-  function start(){
-    document.getElementById("card").style.transition = "3000";
-    window.setTimeout(welcome, 1500)
-  }
+  // var greeting_card = document.getElementsByClassName("card");
+
+  // function welcome(){
+  //   document.getElementById("card").style.transform = "translateY(0)";
+  // }
+  // function start(){
+  //   document.getElementById("card").style.transition = "3000";
+  //   window.setTimeout(welcome, 1500)
+  // }
 
 
 
@@ -40,9 +41,9 @@ document.getElementById("button").addEventListener("click", function(){
 
 
 
-    start({
+    // start({
 
-    }, )
+    // }, )
 
   }
 

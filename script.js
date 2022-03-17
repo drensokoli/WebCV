@@ -28,18 +28,29 @@ document.getElementById("button").addEventListener("click", function(){
   //   //  }
   // }
 
+  var textTransform = document.getElementById("welcome");
+
+  var card = document.getElementById("card");
+
+  // .classList.toggle("visible");
+
   window.onload = function(){
     setTimeout(function(){
       popup.style.display = "block";
 
-    }, 3000)
+    }, 4000)
 
     // change({
 
     // }, 1000)
 
+    setTimeout(function(){
+      card.classList.toggle("invisible");
+    }, 1000)
 
-
+    setTimeout(function(){
+      textTransform.classList.toggle("invisible");
+    }, 2000)
 
     // start({
 

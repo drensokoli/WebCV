@@ -112,6 +112,36 @@ form.EWF__form input::placeholder {
     background: transparent;
 }
 
+form.EWF__form textarea{
+    background: transparent;
+    padding-top: 12px;
+    color: #fff;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+    border-radius: 0px;
+    line-height: 18px;
+    font-size: 16px;
+    font-family: Arial;
+    text-align: left;
+    border: 0;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    border: solid 1px rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+}
+
+form.EWF__form textarea:hover{
+    border: solid 1px rgba(255, 255, 255, 1); 
+}
+
+form.EWF__form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
 
 form.EWF__form .EWF__subscribe {
     background: transparent;

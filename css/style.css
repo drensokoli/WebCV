@@ -43,14 +43,6 @@ html {
     z-index: -10;
 }
 
-.greeting{
-    height: 100vh;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .card{
     display: flex;
     align-items: center;
@@ -63,6 +55,8 @@ html {
     font-weight: 15%;
     z-index: -5;
     position: absolute;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
 }
 
 .card.transformed-state{
@@ -72,13 +66,27 @@ html {
 }
 
 
-.card h1{    
+.visible{    
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     font-size: 60px;
     color: white;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.invisible{
+    opacity: 0;
+}
+
+.greeting{
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .close{
@@ -258,7 +266,7 @@ a:active{
     border-left: solid #1d2d3c;
     padding-left: 1%; 
     width: fit-content;
-    transition: 400ms;
+    transition: ease-in-out 0.2s;
 }
 
 .work{

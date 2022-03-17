@@ -20,6 +20,9 @@
     align-items: center;
     margin-bottom: 5px;
     transform: translateY(-0.5em);
+}
+
+.secondBG{
 
 }
 
@@ -30,10 +33,18 @@
     min-width: 100%;
     min-height: 100%;
 }
+#myVideo2 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 10px;
+    min-height: 10px;
+}
 
 form.EWF__form {
     position: relative;
-    background: rgb(255, 102, 102);
+    /* background: rgb(255, 102, 102); */
+    background: transparent;
     padding-top: 60px;
     padding-left: 60px;
     padding-bottom: 60px;

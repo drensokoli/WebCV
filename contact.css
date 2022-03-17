@@ -26,7 +26,7 @@
 }
 
 form.EWF__form {
-    position: absolute;
+    position: relative;
     background: #333d77;
     padding-top: 60px;
     padding-left: 60px;

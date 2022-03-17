@@ -173,7 +173,7 @@ a:active{
     color: white;
     background-color: transparent;
     min-width: 300px;
-    max-width: 300px;
+    width: 70%;
     border-radius: 3px;
     padding: 15px 30px 15px 30px;
     font-size: 20px;
@@ -260,13 +260,15 @@ a:active{
 
 .items{
     margin-bottom: 50px;
+    border-left: solid transparent;
+
 }
 
 .items:hover{    
     border-left: solid #1d2d3c;
-    padding-left: 1%; 
+    padding-left: 7px; 
     width: fit-content;
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.35s;
 }
 
 .work{
@@ -408,8 +410,6 @@ a:active{
 .virtue:hover .subtext{
     color: white;
 }
-
-
 
 
 /* ______________________________________________MEDIA QUERY______________________________________________ */

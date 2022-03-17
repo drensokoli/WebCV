@@ -1,3 +1,9 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
+}
+
 .contact_form{
     display: flex;
     justify-content: center;
@@ -8,7 +14,7 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color:rgba(0, 13, 85, 0.8);
+    background-color:rgba(255, 0, 0, .6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +33,7 @@
 
 form.EWF__form {
     position: relative;
-    background: #333d77;
+    background: rgb(255, 102, 102);
     padding-top: 60px;
     padding-left: 60px;
     padding-bottom: 60px;
@@ -39,16 +45,15 @@ form.EWF__form {
     border: solid 3px #fff;
 }
 
-
-
 form.EWF__form p {
     color: #fff;
     text-align: left;
     line-height: 18px;
-    font-size: 16px;
-    font-family: Geneva, sans-serif;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     margin: 12px 0;
 }
 
@@ -62,21 +67,23 @@ form.EWF__form .EWF__header {
     text-align: center;
     line-height: 50px;
     font-size: 40px;
-    font-family: Nunito, Helvetica, Arial, "sans serif";
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 100;
+    text-transform: uppercase;
 }
 
 form.EWF__form label {
     line-height: 18px;
     font-size: 16px;
     color: #ffe6ed;
-    font-family: Nunito, Helvetica, Arial, "sans serif";
     text-align: left;
     display: block;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 5px;
 }
 
@@ -96,8 +103,10 @@ form.EWF__form input {
     width: 100%;
     max-width: 100%;
     display: block;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     border: solid 1px rgba(255, 255, 255, 0.6);
     border-radius: 5px;
 }
@@ -128,8 +137,10 @@ form.EWF__form textarea{
     width: 100%;
     max-width: 100%;
     display: block;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     border: solid 1px rgba(255, 255, 255, 0.6);
     border-radius: 5px;
 }
@@ -158,8 +169,11 @@ form.EWF__form .EWF__subscribe {
     display: inline-block;
     width: auto;
     max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
+    text-transform: uppercase;
     border: solid 1px rgba(255, 255, 255, 0.6);
 }
 
@@ -169,7 +183,7 @@ form.EWF__form .EWF__subscribe:hover{
 }
 
 form.EWF__form .EWF__subscribe:focus{
-    background-color: #1d2244;
+    background-color: rgb(255, 65, 65);
 }
 
 .EWF__form .webform-options {
@@ -247,8 +261,6 @@ form.EWF__form a {
     font-weight: normal;
 }
 
-
-
 @supports (-ms-ime-align:auto) {
 
     form.EWF__form .checkboxes input[type='checkbox'],
@@ -258,27 +270,40 @@ form.EWF__form a {
     }
 }
 
-@media (max-width:700px) {
-    form.EWF__form{
-        max-width: 80%;
+@media (max-width:650px) {
+        form.EWF__form{
+        max-width: 95%;
         padding-top: 1%;
         padding-bottom: 5%;
     }
-}
-
-@media (max-width:450px) {
-    form.EWF__form{
-        max-width: 95%;
-
-    }
-    #ewf_formheader {
-        font-size: 35px;
+    form.EWF__form .EWF__header {
+        font-size: 30px;
         line-height: 25px;
         padding-top: 35px;
     }
     #ewf_datadisclaimer{
         font-size: 12px;
     }
-
 }
 
+@media (max-width:400px) {
+    form.EWF__form .EWF__header {
+        font-size: 25px;
+        padding-left: 0;
+        padding-bottom: 20px;
+        padding-right: 0;
+    }
+    form.EWF__form input::placeholder {
+        font-size: 11px;
+    }
+    form.EWF__form textarea::placeholder {
+        font-size: 11px;
+    }
+    form.EWF__form .EWF__subscribe {
+        font-size: 15px;
+        padding-left: 30px;
+        padding-bottom: 12px;
+        padding-right: 30px;
+       
+    }
+}

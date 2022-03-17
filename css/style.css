@@ -46,6 +46,7 @@ html {
 .card{
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     width: 600px;
     height: 500px;

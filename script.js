@@ -5,6 +5,14 @@ document.getElementById("button").addEventListener("click", function(){
   const popup = document.querySelector('.alert');
   const close = document.querySelector('.button');
 
+  
+// ____________________ REVERSE SCROLL________________
+  // $(window).on('scroll', function(){
+  //   $(".card").css('bottom', $(window).scrollTop()*-0.8);
+  // });
+
+
+// ____________________ WELCOME CARD FUNCTION ALTERNATIVE________________
   // var greeting_card = document.getElementsByClassName("card");
 
   // function welcome(){
@@ -14,8 +22,6 @@ document.getElementById("button").addEventListener("click", function(){
   //   document.getElementById("card").style.transition = "3000";
   //   window.setTimeout(welcome, 1500)
   // }
-
-
 
   // function change(){
 
@@ -32,17 +38,13 @@ document.getElementById("button").addEventListener("click", function(){
 
   var card = document.getElementById("card");
 
-  // .classList.toggle("visible");
 
+  
   window.onload = function(){
     setTimeout(function(){
       popup.style.display = "block";
 
     }, 4000)
-
-    // change({
-
-    // }, 1000)
 
     setTimeout(function(){
       card.classList.toggle("invisible");
@@ -51,6 +53,11 @@ document.getElementById("button").addEventListener("click", function(){
     setTimeout(function(){
       textTransform.classList.toggle("invisible");
     }, 2000)
+
+    // change({
+
+    // }, 1000)
+
 
     // start({
 
@@ -61,9 +68,3 @@ document.getElementById("button").addEventListener("click", function(){
   close.addEventListener('click', () => {
     popup.style.display = "none";    
   }) 
-
-  $(document).ready(function(){ 
-    $(window).scroll(function(){
-      $(".card").css("transform", "translate3d(0," + $(this).scrollTop()*2 + "px, 0)"); 
-   }).scroll();
-});  

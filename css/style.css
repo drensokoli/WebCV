@@ -59,6 +59,7 @@ html {
     position: absolute;
     opacity: 1;
     transition: ease-in-out 0.5s;
+    z-index: 100;
 }
 
 .visible{    
@@ -72,6 +73,36 @@ html {
     transition: ease-in-out 1.5s;
 }
 
+.arrows{
+    margin-top: 270px;
+    padding-top: 20px;
+    display: flex;
+    z-index: 300;
+    flex-direction: column;
+}
+
+.arrow{
+    /* position: absolute; */
+    margin-top: 0px;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    opacity: 1;
+    transition: ease-in-out 1.5s;
+    cursor: pointer;
+}
+
+.arrow:hover{
+    transform: translateY(-0.2em);
+    /* height: 55px; */
+    transition: ease-in 0.1s;
+    transition: ease-out 0.1s;
+
+}
+
 .invisible{
     opacity: 0;
 }
@@ -82,6 +113,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .close{
@@ -513,6 +545,13 @@ a:active{
         width: 80%;
     }
     .card h1{
+        font-size: 35px;
+    }
+    .arrows{
+        margin-top: 220px;
+    }
+    .arrow{
+
         font-size: 35px;
     }
 }

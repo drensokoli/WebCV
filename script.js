@@ -38,6 +38,9 @@ document.getElementById("button").addEventListener("click", function(){
 
   var card = document.getElementById("card");
 
+  var scrollLink1 = document.querySelector(".para");
+  var scrollLink2 = document.querySelector(".dyta");
+  var scrollLink3 = document.querySelector(".treta");
 
   
   window.onload = function(){
@@ -53,6 +56,18 @@ document.getElementById("button").addEventListener("click", function(){
     setTimeout(function(){
       textTransform.classList.toggle("invisible");
     }, 2000)
+
+    setTimeout(function(){
+      scrollLink1.classList.remove("invisible");
+    }, 2500)
+
+    setTimeout(function(){
+      scrollLink2.classList.remove("invisible");
+    }, 2800)
+
+    setTimeout(function(){
+      scrollLink3.classList.remove("invisible");
+    }, 3100)
 
     // change({
 

@@ -92,9 +92,9 @@ html {
 }
 
 .close{
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: relative;
+    bottom: 50px;
+    float: right;
 
 }
 

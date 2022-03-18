@@ -48,11 +48,9 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(20px);
     width: 600px;
     height: 500px;
     background: transparent;
-    /* filter: blur(2px); */
     border: solid 2px white;
     font-weight: 15%;
     z-index: -5;
@@ -60,6 +58,11 @@ html {
     opacity: 1;
     transition: ease-in-out 0.5s;
     z-index: 100;
+}
+
+.card:hover{
+    backdrop-filter: blur(20px);
+    transition: ease-in-out 0.2s;
 }
 
 .visible{    
@@ -96,11 +99,9 @@ html {
 }
 
 .arrow:hover{
-    transform: translateY(-0.2em);
-    /* height: 55px; */
+    transform: translateY(-0.1em);
     transition: ease-in 0.1s;
     transition: ease-out 0.1s;
-
 }
 
 .invisible{
@@ -127,13 +128,24 @@ html {
     justify-content: center;
 }
 
+.col-container{
+    display: table;
+}
 
 .first-col{
+    display: table-cell;
     color: #eaeced;
     background-color: #1d2d3c;
-    float: left;
     width: 30%;
-    height: 2850px;  
+    height: 100%;  
+}
+
+.zgjatu{
+    height: 1500px;
+}
+
+.akoma{
+    height: 1000px;
 }
 
 .foto{
@@ -170,7 +182,7 @@ p{
 
 .contact{
     margin-left: 10%;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .contact ul{
@@ -184,7 +196,7 @@ p{
 .buttons{
     display:flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 a,
@@ -268,16 +280,11 @@ a:active{
 
 /* __________________________________SECOND COLUMN____________________________________________ */
 .second-col{
+    display: table-cell;
     background-color: #eaeced;
-    float: right;
-    width: 70%  ;
-    height: 2850px;
+    width: 70%;
+    height: fit-content;
 }
-
-.pdf{
-    text-decoration: none;
-}
-
 
 .second-col h3{
     font-size: 35px;
@@ -298,9 +305,8 @@ a:active{
 }
 
 .work{
-    margin-top: 100px;
     margin-left: 75px;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 }
 
 .title{
@@ -311,12 +317,28 @@ a:active{
     width: fit-content;
     background-color: #1d2d3c;
     margin-bottom: 20px;
+    
+
 }
 
-.title:hover{
-    transition: 500ms;
-    transform: translateY(-0.50em);
-    cursor: pointer;
+
+.toggle_arrow{
+    transform: rotate(-180deg);
+    transition: ease-in-out .25s;
+}
+
+.rotate{
+    transform: rotate(0deg);
+    transition: ease-in-out .25s;
+}
+
+.edu_arrow{
+    transform: rotate(-180deg);
+    transition: ease-in-out .25s;
+}
+.rotateEdu{
+    transform: rotate(0deg);
+    transition: ease-in-out .25s;
 }
 
 .nav-toggle{
@@ -334,13 +356,7 @@ a:active{
 
 .education{
     margin-left: 75px;
-    margin-bottom: 75px;
-}
-
-.education_title:hover{
-    transition: 500ms;
-    transform: translateY(-0.50em);
-    cursor: pointer;
+    margin-bottom: 50px;
 }
 
 .education_title{
@@ -364,14 +380,14 @@ a:active{
 
 .edu-toggle:checked ~ .education_content{
     display: block;
+    transition: ease-in-out .5s;
 }
 
 .carouselExampleCaptions{
     display: flex;
     justify-content: center;
+    align-items: center;
 } 
-
-
 
 .skills{
     margin-left: 75px;
@@ -399,74 +415,114 @@ a:active{
     font-size: 30px;
 }
 
+.virtueContent{
+    display: block;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
 .virtues{
     display: flex;
     justify-content: center;
+
 }
 
 .virtue{
     border: solid #1d2d3c;
     border-radius: 5px;
+    align-items: center;
     text-align: center;
-    padding: 15px 80px 30px 80px;
+    padding: 30px 80px 30px 80px;
     margin: 10px; 
-    min-width: 400px;
+    width: 400px;
+    height: 400px;
 }
 
-.virtue:hover{
-    transform: translateY(-0.50em);
-    box-shadow: 0 0.5em 0.5em -0.4em;
-    transition: 400ms;
-    background-color: rgb(40, 51, 75);
+.rapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.wrapper{
+    width: 350px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+  .wrapper .virtue{
+    position: absolute;
+    color: #1d2d3c;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border-radius: 10px;
+    transform: translateY(0deg);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper:hover > .front-picture{
+    transform: rotateY(-180deg);
+  }
+
+  .wrapper .back-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    /* flex-direction: column; */
+    transform: rotateY(180deg);
     color: white;
-}
+    background: #1d2d3c;
+    /* font-size: small; */
+  }
+  .wrapper:hover > .back-picture{
+    transform: rotateY(0deg);
+  }
 
-.virtue h5{
-    font-size: 15px;
-    color: rgb(40, 51, 75);
-}
-
-.subtext{
-    max-width: 200px;
-    color: transparent;
+.virtuozo{
     display: block;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    height: fit-content;
 }
-
-.virtue:hover .subtext{
-    color: white;
-}
-
 
 /* ______________________________________________MEDIA QUERY______________________________________________ */
 
 @media (max-width:1080px){
-    
-    .first-col{
+    .col-container{
+        display: block;
         height: fit-content;
-        float: none;
+    }
+
+    .first-col{
+        display: block;
+        height: fit-content;
         width: 100%;
         padding-bottom: 10px;
     }
     
     .second-col{
-        height: fit-content;
-        float: none;
+        display: block;
+        height: 120%;
         width: 100%;
         align-items: center;
+        padding-bottom: 50px;
     }
-/* 
-    #btn{
-        margin-bottom: 20px;
-    } */
+
     .work{
         padding-top: 50px;
         margin-top: 0px;
     }
 
-    .virtue h6{
-        margin-left: 17%;
-    }
     .alert{
         display: none;
         transform: scale(1, 1);
@@ -519,24 +575,9 @@ a:active{
 
 }
 
-@media (max-width:650px) {
-    .virtue{
-       padding: 10px 20px 10px 20px;
-    }
-}
-
-@media (max-width:850px) {
-    .virtue{
-        min-width: 40%;
-    }
-    .virtue h6{
-        margin-left: 0;
-    }
-}
-
-@media (min-width:1080px){
-    .virtue{
-        min-width: 300px;
+@media (max-width:800px) {    
+    .virtues{
+        display: block;
     }
 }
 
@@ -553,5 +594,11 @@ a:active{
     .arrow{
 
         font-size: 35px;
+    }
+}
+
+@media (max-width:400px) {
+    .wrapper{
+        width: 280px;
     }
 }

@@ -2,8 +2,37 @@ document.getElementById("button").addEventListener("click", function(){
     document.querySelector(".alert").style.display  = "none";
   })
 
+
+// TITLE DROPDOWN FUNCTIONS
+
+  var shigjeta = document.querySelector(".toggle_arrow");
+
+  function rotate(){
+    shigjeta.classList.toggle("rotate");
+  }
+
+  var shigjetaEdu = document.querySelector(".edu_arrow");
+
+  function rotateEdu(){
+    shigjetaEdu.classList.toggle("rotateEdu");
+  }
+
+
+
   const popup = document.querySelector('.alert');
   const close = document.querySelector('.button');
+
+
+//CARD CHANGE FUNCTIONS
+  // var karta1 = document.querySelector(".virtytipare");
+
+  // function ndryshimi(){
+  //   karta1.innerHTML = "Innovation distinguishes between a leader and a follower";
+  //   karta1.style.maxWidth = "400px";
+  // }
+
+
+
 
   
 // ____________________ REVERSE SCROLL________________
@@ -41,6 +70,7 @@ document.getElementById("button").addEventListener("click", function(){
   var scrollLink1 = document.querySelector(".para");
   var scrollLink2 = document.querySelector(".dyta");
   var scrollLink3 = document.querySelector(".treta");
+
 
   
   window.onload = function(){

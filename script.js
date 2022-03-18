@@ -47,7 +47,7 @@ document.getElementById("button").addEventListener("click", function(){
     setTimeout(function(){
       popup.style.display = "block";
 
-    }, 4000)
+    }, 6000)
 
     setTimeout(function(){
       card.classList.toggle("invisible");

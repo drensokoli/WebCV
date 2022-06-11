@@ -401,6 +401,10 @@ a:active{
     min-height: 300px;
 }
 
+.sql{
+    width: 10%;
+}
+
 .carousel-inner p{
     font-size: 30px;
     color: black;
